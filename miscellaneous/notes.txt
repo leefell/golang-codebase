@@ -1,0 +1,26 @@
+Go é expressivo, conciso e limpo: Foi projetado para ser fácil de ler e escrever, com uma sintaxe simples e direta.
+
+Criada para aproveitar recursos multicore e rede: Go foi desenvolvida com suporte nativo para concorrência, facilitando a escrita de programas que aproveitam eficientemente os recursos de hardware, como CPUs múltiplos e operações de rede.
+
+Rápida compilação com garbage collection: Apesar de ter uma coleta de lixo (garbage collection), o Go é conhecido por sua rápida compilação, o que é crucial para um ciclo de desenvolvimento ágil.
+
+Estaticamente tipada e compilada em apenas um arquivo binário: O Go é estaticamente tipado, o que significa que os tipos de variáveis são verificados em tempo de compilação, garantindo maior segurança e eficiência. Além disso, o Go compila todo o código-fonte em um único arquivo binário, simplificando a implantação e distribuição de aplicativos.
+
+Linguagem que se autocompila: Desde a versão 1.5, o compilador do Go foi reescrito em Go, permitindo que a linguagem se auto-compile, o que contribui para sua robustez e evolução contínua.
+
+Por que criar outra linguagem se existem diversas?:
+
+Limitações em algumas das principais linguagens utilizadas na Google, como:
+Python (lentidão)
+C++ (complexidade e tempo de compilação)
+Java (complexidade gerada ao longo do tempo/verbosidade)
+Go foi projetada para ser simples, eficiente e capaz de lidar com multithreading e concorrência de forma natural.
+Mudar variáveis de ambiente::
+
+Exemplo de mudança de variável de ambiente para compilar para diferentes sistemas operacionais:
+GOOS=linux go build hello.go
+GOOS=linux define o sistema operacional alvo como Linux.
+
+go install::
+Comando que compila e instala o programa no diretório bin do ambiente Go.
+Útil para facilitar o acesso a executáveis de forma global.
