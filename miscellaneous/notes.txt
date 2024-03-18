@@ -24,3 +24,6 @@ GOOS=linux define o sistema operacional alvo como Linux.
 go install::
 Comando que compila e instala o programa no diretório bin do ambiente Go.
 Útil para facilitar o acesso a executáveis de forma global.
+
+Go não compila se você tiver uma variável que não está sendo usada, para usar funcoes exportadas a funcao deve comecar com a primeira letra
+maiúscula.
