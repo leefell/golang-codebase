@@ -24,6 +24,16 @@ func main() {
 		waitGroup.Done()
 	}()
 
+	go func() {
+		escrever("GoRoutine 3")
+		waitGroup.Done()
+	}()
+
+	go func() {
+		escrever("GoRoutine 4")
+		waitGroup.Done()
+	}()
+
 	waitGroup.Wait()
 }
 
