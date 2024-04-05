@@ -12,7 +12,7 @@ import (
 func main() {
 	var waitGroup sync.WaitGroup
 
-	waitGroup.Add(2)
+	waitGroup.Add(4)
 
 	go func() {
 		escrever("Olá mundo!")
@@ -27,8 +27,8 @@ func main() {
 	go func() {
 		escrever("GoRoutine 3")
 		waitGroup.Done()
-	}()
 
+	}()
 	go func() {
 		escrever("GoRoutine 4")
 		waitGroup.Done()
